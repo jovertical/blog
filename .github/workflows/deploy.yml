@@ -48,7 +48,7 @@ jobs:
 
             # Update everything.
             git reset --hard && git fetch --all && git pull origin master
-            rm -rf .env && SECRET_PASSPHRASE=${{ secrets.SECRET_PASSPHRASE }} sh deploy/scripts/decrypt_secret.sh
+            rm -rf .env && SECRET_PASSPHRASE=${{ secrets.SECRET_PASSPHRASE }} sh deploy/decrypt_secret.sh
             composer install --optimize-autoloader --no-dev
             composer update
 
