@@ -9,6 +9,7 @@ on:
       - resources/css
       - resources/js
       - resources/images
+      - resources/views
 
 jobs:
   Build-Deploy:
