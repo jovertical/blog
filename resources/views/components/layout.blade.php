@@ -33,8 +33,10 @@
 <body class="min-h-screen">
     <div class="p-8 md:p-16 lg:p-24 flex flex-col items-center">
         <div class="w-full md:mb-10" x-data="{ open: false }">
-            <div class="fixed md:relative left-0 right-0 top-0 z-20 flex items-center justify-between md:justify-center w-full px-6">
-                <img src="/png/logo.png" alt="Logo" class="w-24 md:w-32">
+            <div class="fixed md:relative left-0 right-0 top-0 z-20 flex items-center justify-between md:justify-center w-full px-6 bg-white">
+                <a href="/">
+                    <img src="/png/logo.png" alt="Logo" class="w-24 md:w-32">
+                </a>
 
                 <button class="md:hidden transition" @click="open = !open">
                     <div class="w-6 h-2px bg-gray-darker mb-1 duration-500 ease-in-out" :class="{ 'transform -rotate-45': open }"></div>
