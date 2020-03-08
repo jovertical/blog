@@ -6,10 +6,10 @@ on:
       - fix/workflow
 
     paths:
-      - resources/css
-      - resources/js
-      - resources/images
-      - resources/views
+    - resources/css
+    - resources/js
+    - resources/images
+    - resources/views
 
 jobs:
     Build-Upload:

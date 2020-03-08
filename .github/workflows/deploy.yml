@@ -6,10 +6,10 @@ on:
       - '!master'
 
     paths-ignore:
-      - resources/css
-      - resources/js
-      - resources/images
-      - resources/views
+    - resources/css
+    - resources/js
+    - resources/images
+    - resources/views
 
 jobs:
   Build-Deploy:
