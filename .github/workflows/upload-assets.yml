@@ -3,8 +3,7 @@ name: Upload Assets
 on:
   push:
     branches:
-      - fix/workflow
-    
+      - master
     paths:
     - 'resources/**'
     - '!resources/lang/**'

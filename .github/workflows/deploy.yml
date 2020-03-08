@@ -3,13 +3,10 @@ name: Deploy
 on:
   push:
     branches:
-      - '!master'
-
+      - master
     paths-ignore:
-    - resources/css
-    - resources/js
-    - resources/images
-    - resources/views
+    - 'resources/**'
+    - '!resources/lang/**'
 
 jobs:
   Build-Deploy:
