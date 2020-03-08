@@ -5,9 +5,9 @@ on:
     branches:
       - fix/workflow
 
-    paths:
-    - 'resources/**'
-    - '!resources/lang/**'
+    # paths:
+    # - 'resources/**'
+    # - '!resources/lang/**'
 
 jobs:
     Build-Upload:
