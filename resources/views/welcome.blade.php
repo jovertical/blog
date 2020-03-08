@@ -1,3 +1,3 @@
 <x-layout>
-    Hello, I'm Jovert...
+    Hello, I'm Jovert..
 </x-layout>
