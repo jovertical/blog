@@ -1,3 +1,3 @@
 <x-layout>
-    Hello
+    Hello there!
 </x-layout>
