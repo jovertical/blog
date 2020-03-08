@@ -4,12 +4,9 @@ on:
   push:
     branches:
       - master
-
     paths:
-      - resources/css
-      - resources/js
-      - resources/images
-      - resources/views
+    - 'resources/**'
+    - '!resources/lang/**'
 
 jobs:
     Build-Upload:
