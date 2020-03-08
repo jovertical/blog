@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - fix/workflow
+    
     paths:
     - 'resources/**'
     - '!resources/lang/**'
