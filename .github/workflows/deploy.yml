@@ -27,7 +27,10 @@ jobs:
       - name: Install dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
-      - run: touch public/{mix-manifest.json,css/app.css,js/app.js}
+      - working-directory: public
+        run: |
+          mkdir css js
+          touch ./{mix-manifest.json,css/app.css,js/app.js}
 
       - name: Run the test suite
         run: composer test
