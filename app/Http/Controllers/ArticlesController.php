@@ -8,7 +8,7 @@ class ArticlesController extends Controller
 {
     /**
      * Display a listing of the Article.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function index()
@@ -20,7 +20,7 @@ class ArticlesController extends Controller
 
     /**
      * Display the specified Article.
-     * 
+     *
      * @return \Illuminate\View\View
      */
     public function show(Article $article)

@@ -61,7 +61,7 @@
                 @endforeach
             </div>
         </div>
-        <main class="pt-24 md:pt-0">
+        <main class="w-full pt-24 md:pt-0">
             {{ $slot }}
         </main>
     </div>

@@ -1,15 +1,15 @@
 <x-layout>
-    <div class="mx-auto w-full md:w-1/2">
-        <h1 class="text-4xl font-bold mb-2">
+    <div class="mx-auto w-full md:w-3/5">
+        <h1 class="text-3xl font-bold mb-4">
             {{ $article->title }}
         </h1>
 
-        <p class="mb-2">
-            {{ $article->published_at->diffForHumans() }}
+        <p class="text-gray mb-4">
+            {{ optional($article->published_at)->toFormattedDateString() }}
         </p>
 
         <p>
-            {{ $article->body }}
+            {!! $article->body !!}
         </p>
     </div>
 </x-layout>

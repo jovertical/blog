@@ -35,4 +35,26 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the articles for the user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function articles()
+    {
+        return $this->hasMany(Article::class);
+    }
+
+    /**
+     * Create an associated article.
+     *
+     * @param array $attributes
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function createArticle($attributes)
+    {
+        return $this->articles()->create($attributes);
+    }
 }

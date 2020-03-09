@@ -1,7 +1,6 @@
 <?php
 
 use App\Article;
-use App\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -18,7 +17,7 @@ use Illuminate\Support\Str;
 
 $factory->define(Article::class, function (Faker $faker) {
     return [
-        'user_id' => User::first()->id,
+        'user_id' => $faker->numberBetween(0, 1000),
         'title' => ($title = $faker->sentence),
         'slug' => Str::slug($title),
         'body' => $faker->paragraph,
