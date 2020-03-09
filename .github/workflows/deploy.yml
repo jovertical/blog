@@ -27,6 +27,8 @@ jobs:
       - name: Install dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
+      - run: touch public/mix-manifest.json
+
       - name: Run the test suite
         run: composer test
 
