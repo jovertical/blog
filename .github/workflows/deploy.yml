@@ -30,7 +30,7 @@ jobs:
       - working-directory: public
         run: |
           mkdir css js
-          touch ./{mix-manifest.json,css/app.css,js/app.js}
+          touch mix-manifest.json css/app.css js/app.js
 
       - name: Run the test suite
         run: composer test
