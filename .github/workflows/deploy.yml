@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - fix-workflow-error
     paths-ignore:
     - 'resources/**'
     - '!resources/lang/**'

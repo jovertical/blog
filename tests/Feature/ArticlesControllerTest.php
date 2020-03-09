@@ -15,6 +15,8 @@ class ArticlesControllerTest extends TestCase
     /** @test */
     public function it_displays_list_of_articles()
     {
+        $this->withoutExceptionHandling();
+
         factory(Article::class, 5)->create();
 
         $this->get('/articles')
