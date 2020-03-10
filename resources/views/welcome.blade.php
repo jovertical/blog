@@ -1,3 +1,3 @@
 <x-layout>
-    Hello, I'm Jovert...
+    <p class="text-center">Hello, I'm Jovert...</p>
 </x-layout>

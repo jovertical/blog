@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout clean>
     <div class="mx-auto w-full md:w-3/5">
         <h1 class="text-3xl font-bold mb-4">
             {{ $article->title }}

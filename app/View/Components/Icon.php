@@ -23,8 +23,8 @@ class Icon extends Component
     /**
      * Create a new component instance.
      *
-     * @var string $name The name of the icon, see blade file for possible values.
-     * @var string $size Possible values: small, medium, large
+     * @param string $name The name of the icon, see blade file for possible values.
+     * @param string $size Possible values: small, medium, large
      *
      * @return void
      */
@@ -35,7 +35,8 @@ class Icon extends Component
         $dimensions = [
             'small' => [16, 16],
             'medium' => [20, 20],
-            'large' => [24, 24],
+            'large' => [28, 28],
+            'extra-large' => [36, 36],
         ];
 
         $this->dimensions = $dimensions[$size] ?? $dimensions['medium'];

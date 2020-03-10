@@ -2,11 +2,13 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                'gray-lighter': '#a8a8a8',
                 'gray': '#718096',
-                'gray-darker': '#1a202c'
+                'gray-darker': '#1a202c',
+                'overlay': 'rgba(0,0,0,.88)'
             },
             spacing: {
-                '2px': '2px'
+                '3px': '3px',
             }
         },
     },

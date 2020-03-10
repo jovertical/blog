@@ -14,6 +14,23 @@ class Layout extends Component
     public $links = ['articles', 'tutorials', 'talks', 'projects'];
 
     /**
+     * Navigation links will be hidden & become toggleable.
+     *
+     * @var bool
+     */
+    public $clean;
+
+    /**
+     * Create a new component instance.
+     *
+     * @param bool $clean Navigation links will be hidden & become toggleable.
+     */
+    public function __construct($clean = false)
+    {
+        $this->clean = $clean;
+    }
+
+    /**
      * Get the view / contents that represent the component.
      *
      * @return \Illuminate\View\View|string

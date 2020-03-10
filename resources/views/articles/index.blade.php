@@ -20,12 +20,6 @@
                     </p>
                 </span>
             </div>
-
-            <div id="footer-links" class="w-full mt-12 text-center">
-                <a href="/archives" class="text-gray hover:underline">
-                    View archive
-                </a>
-            </div>
         @empty
             <div id="no-articles">
                 <p class="text-center">
@@ -33,5 +27,13 @@
                 </p>
             </div>
         @endforelse
+
+        @if (count($articles))
+            <div id="footer-links" class="w-full mt-12 text-center">
+                <a href="/archives" class="text-gray hover:underline">
+                    View archive
+                </a>
+            </div>            
+        @endif
     </div>
 </x-layout>
