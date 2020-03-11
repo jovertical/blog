@@ -14,20 +14,20 @@ class Layout extends Component
     public $links = ['articles', 'tutorials', 'talks', 'projects'];
 
     /**
-     * Navigation links will be hidden & become toggleable.
+     * It can be: default, wide, clean
      *
-     * @var bool
+     * @var string
      */
-    public $clean;
+    public $variant;
 
     /**
      * Create a new component instance.
      *
-     * @param bool $clean Navigation links will be hidden & become toggleable.
+     * @param bool $variant It can be: default, wide, clean
      */
-    public function __construct($clean = false)
+    public function __construct($variant = 'default')
     {
-        $this->clean = $clean;
+        $this->variant = $variant;
     }
 
     /**

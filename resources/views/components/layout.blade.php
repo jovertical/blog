@@ -31,7 +31,7 @@
 </head>
 
 <body class="min-h-screen">
-    @if ($clean)
+    @if ($variant === 'wide')
         <div class="flex items-center justify-between px-4 md:px-8 py-4 md:py-4">
             <a href="/">
                 <img src="/png/logo.png" alt="Logo" class="w-12 md:w-16">
@@ -62,7 +62,13 @@
         </div>
     @endif
     <div class="p-8 md:p-16 lg:p-24 flex flex-col items-center">
-        @if (! $clean)
+        @if ($variant === 'clean')
+            <div class="mb-6">
+                <a href="/">
+                    <img src="/png/logo.png" alt="Logo" class="w-12 md:w-20">
+                </a>
+            </div>
+        @elseif ($variant === 'default')
             <div x-data="{ open: false }" class="w-full md:mb-10">
                 <div class="fixed md:relative left-0 right-0 top-0 z-20 flex items-center justify-between md:justify-center w-full px-6 bg-white">
                     <a href="/">
